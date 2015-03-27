@@ -40,6 +40,11 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
         return cell
     }
     
+    /*Hide the status Bar */
+    override func   prefersStatusBarHidden() -> Bool {
+        return true
+    }
+    
     
     
     
