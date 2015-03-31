@@ -3,17 +3,16 @@
     {
       "idiom" : "universal",
       "scale" : "1x",
-      "filename" : "restaurant.jpg"
+      "filename" : "cafedeadend.png"
     },
     {
       "idiom" : "universal",
       "scale" : "2x",
-      "filename" : "restaurant@2x.jpg"
+      "filename" : "cafedeadend@2x.png"
     },
     {
       "idiom" : "universal",
-      "scale" : "3x",
-      "filename" : "restaurant@3x.jpg"
+      "scale" : "3x"
     }
   ],
   "info" : {
