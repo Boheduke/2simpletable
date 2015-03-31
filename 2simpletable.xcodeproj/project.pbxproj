@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		C73EC2A71AC23989000E353B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73EC2A61AC23989000E353B /* AppDelegate.swift */; };
-		C73EC2A91AC23989000E353B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73EC2A81AC23989000E353B /* ViewController.swift */; };
 		C73EC2AC1AC23989000E353B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C73EC2AA1AC23989000E353B /* Main.storyboard */; };
 		C73EC2AE1AC23989000E353B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C73EC2AD1AC23989000E353B /* Images.xcassets */; };
 		C73EC2B11AC23989000E353B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C73EC2AF1AC23989000E353B /* LaunchScreen.xib */; };
 		C73EC2BD1AC23989000E353B /* _simpletableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73EC2BC1AC23989000E353B /* _simpletableTests.swift */; };
+		C7B78FC11ACA30E10012DAE2 /* RestaurantTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B78FC01ACA30E10012DAE2 /* RestaurantTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +29,13 @@
 		C73EC2A11AC23988000E353B /* 2simpletable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 2simpletable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C73EC2A51AC23989000E353B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C73EC2A61AC23989000E353B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C73EC2A81AC23989000E353B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C73EC2AB1AC23989000E353B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C73EC2AD1AC23989000E353B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C73EC2B01AC23989000E353B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		C73EC2B61AC23989000E353B /* 2simpletableTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 2simpletableTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C73EC2BB1AC23989000E353B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C73EC2BC1AC23989000E353B /* _simpletableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _simpletableTests.swift; sourceTree = "<group>"; };
+		C7B78FC01ACA30E10012DAE2 /* RestaurantTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				C73EC2A61AC23989000E353B /* AppDelegate.swift */,
-				C73EC2A81AC23989000E353B /* ViewController.swift */,
+				C7B78FC01ACA30E10012DAE2 /* RestaurantTableViewController.swift */,
 				C73EC2AA1AC23989000E353B /* Main.storyboard */,
 				C73EC2AD1AC23989000E353B /* Images.xcassets */,
 				C73EC2AF1AC23989000E353B /* LaunchScreen.xib */,
@@ -212,7 +212,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C73EC2A91AC23989000E353B /* ViewController.swift in Sources */,
+				C7B78FC11ACA30E10012DAE2 /* RestaurantTableViewController.swift in Sources */,
 				C73EC2A71AC23989000E353B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -405,6 +405,7 @@
 				C73EC2C21AC23989000E353B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C73EC2C31AC23989000E353B /* Build configuration list for PBXNativeTarget "2simpletableTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +414,7 @@
 				C73EC2C51AC23989000E353B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
