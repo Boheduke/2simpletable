@@ -12,6 +12,7 @@
 		C73EC2AE1AC23989000E353B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C73EC2AD1AC23989000E353B /* Images.xcassets */; };
 		C73EC2B11AC23989000E353B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C73EC2AF1AC23989000E353B /* LaunchScreen.xib */; };
 		C73EC2BD1AC23989000E353B /* _simpletableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73EC2BC1AC23989000E353B /* _simpletableTests.swift */; };
+		C7555B431ACB8234007FAE47 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7555B421ACB8234007FAE47 /* CustomTableViewCell.swift */; };
 		C7B78FC11ACA30E10012DAE2 /* RestaurantTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B78FC01ACA30E10012DAE2 /* RestaurantTableViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +36,7 @@
 		C73EC2B61AC23989000E353B /* 2simpletableTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 2simpletableTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C73EC2BB1AC23989000E353B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C73EC2BC1AC23989000E353B /* _simpletableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _simpletableTests.swift; sourceTree = "<group>"; };
+		C7555B421ACB8234007FAE47 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		C7B78FC01ACA30E10012DAE2 /* RestaurantTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -80,6 +82,7 @@
 				C73EC2A61AC23989000E353B /* AppDelegate.swift */,
 				C7B78FC01ACA30E10012DAE2 /* RestaurantTableViewController.swift */,
 				C73EC2AA1AC23989000E353B /* Main.storyboard */,
+				C7555B421ACB8234007FAE47 /* CustomTableViewCell.swift */,
 				C73EC2AD1AC23989000E353B /* Images.xcassets */,
 				C73EC2AF1AC23989000E353B /* LaunchScreen.xib */,
 				C73EC2A41AC23989000E353B /* Supporting Files */,
@@ -212,6 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7555B431ACB8234007FAE47 /* CustomTableViewCell.swift in Sources */,
 				C7B78FC11ACA30E10012DAE2 /* RestaurantTableViewController.swift in Sources */,
 				C73EC2A71AC23989000E353B /* AppDelegate.swift in Sources */,
 			);
