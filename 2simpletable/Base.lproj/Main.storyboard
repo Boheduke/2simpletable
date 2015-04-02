@@ -43,6 +43,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="locationLabel" destination="OlC-7c-4mN" id="wkH-wb-bi6"/>
                                     <outlet property="nameLabel" destination="Owl-bP-Ce0" id="0uh-uf-Kb1"/>
                                     <outlet property="thumbnailImageView" destination="MkF-mo-uji" id="erE-Fv-VLG"/>
                                     <outlet property="typeLabel" destination="Gjk-g5-v5v" id="tqC-9a-lLU"/>

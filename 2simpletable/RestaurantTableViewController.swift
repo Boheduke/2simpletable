@@ -15,6 +15,10 @@ class RestaurantTableViewController: UITableViewController {
     
     var restaurantImages=["cafedeadend.png","homei.png","teakha.png","cafeloisl.png","petiteoyster.png","forkeerestaurant.png","posatelier.png","bourkestreetbakery.png","haighschocolate.png","palominoespresso.png","upstate.png","traif.png","grahamavenuemeats.png","wafflewolf.png","fiveleaves.png","cafelore.png","confessional.png","barrafina.png","donostia.png","thaicafe.png"]
     
+    var restaurantLocations=["Hong Kong","Hong Kong","Hong Kong","Hong Kong","Hong Kong","Hong Kong","Hong  Kong","Sydney","Sydney","Sydney","New York","New York","New York","New York","London","London","London","London"]
+    
+    var restaurantTypes=["Coffe & Tea Shop","Cafe","Tea House","Austrain / Causual  Drink","French","Bakery","Bakery","Chocolate","Cafe","Ameriacan / Seafood","American","American","Breakfast & Brunch","Coffee & Tea","Coffee & Tea","Latin American","Spanish","spanish","spanish","British","Thai"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -52,6 +56,8 @@ class RestaurantTableViewController: UITableViewController {
 
         // Configure the cell...
         cell.nameLabel.text=restaurantNames[indexPath.row]
+        cell.locationLabel.text=restaurantLocations[indexPath.row]
+        cell.typeLabel.text=restaurantTypes[indexPath.row]
         cell.thumbnailImageView.image=UIImage(named: restaurantImages[indexPath.row])
 
         return cell
