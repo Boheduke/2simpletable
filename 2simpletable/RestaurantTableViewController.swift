@@ -63,6 +63,41 @@ class RestaurantTableViewController: UITableViewController {
         return cell
     }
     
+    override func tableView(tableView:UITableView,didSelectRowAtIndexPath indexPath: NSIndexPath)
+    {
+        //creat an option menu as action sheet
+        let optionMenu=UIAlertController (title: nil, message: "What do you want to do?", preferredStyle: .Alert)
+        
+        // Add actions to the menu
+        let cancelAction=UIAlertAction(title: "Cancel", style: .Cancel, handler: nil)
+        optionMenu.addAction(cancelAction)
+        
+        //Display the menu
+        self.presentViewController(optionMenu, animated: true, completion: nil)
+        
+        
+        /* 增加电话呼叫
+*/
+        let callActionHandler = { (action:UIAlertAction!) -> Void in
+            let alertMessage = UIAlertController (title: "Service Unavailable", message: "Sorry,the call feature is not available yet .Please retry later.", preferredStyle: .Alert)
+                alertMessage.addAction(UIAlertAction(title: "Ok", style: .Default, handler: nil))
+                self.presentViewController(alertMessage, animated: true, completion: nil)
+        }
+        
+        let callAction=UIAlertAction(title: "Call" + "123-000-\(indexPath.row)", style: .Default, handler: callActionHandler  )
+        optionMenu.addAction(callAction)
+        
+        //设定已经到过次饭店。使用另外一种handler实现模式。
+        
+        let isVisitedAction=UIAlertAction (title: "I've been here", style: .Default, handler: {
+            (action:UIAlertAction!) -> Void  in
+            let cell = tableView.cellForRowAtIndexPath(indexPath)
+            cell?.accessoryType = .Checkmark
+        })
+        optionMenu.addAction(isVisitedAction)
+        
+    }
+    
 
     /*
     // Override to support conditional editing of the table view.
