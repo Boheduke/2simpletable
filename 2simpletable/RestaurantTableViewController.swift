@@ -19,6 +19,9 @@ class RestaurantTableViewController: UITableViewController {
     
     var restaurantTypes=["Coffe & Tea Shop","Cafe","Tea House","Austrain / Causual  Drink","French","Bakery","Bakery","Chocolate","Cafe","Ameriacan / Seafood","American","American","Breakfast & Brunch","Coffee & Tea","Coffee & Tea","Latin American","Spanish","spanish","spanish","British","Thai"]
     
+    //定义一个布尔数组，用于存储bookmark
+    var restaurantIsVisited=[Bool](count:21,repeatedValue:false)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -60,6 +63,15 @@ class RestaurantTableViewController: UITableViewController {
         cell.typeLabel.text=restaurantTypes[indexPath.row]
         cell.thumbnailImageView.image=UIImage(named: restaurantImages[indexPath.row])
 
+       //在完成cell单元格的一些列选中、alert弹出框事件后，对cell单元格的bookmark进行手动更新。
+        if restaurantIsVisited[indexPath.row] {
+            cell.accessoryType = .Checkmark
+            
+        }else{
+            cell.accessoryType = .None
+        }
+        
+        
         return cell
     }
     
@@ -93,9 +105,13 @@ class RestaurantTableViewController: UITableViewController {
             (action:UIAlertAction!) -> Void  in
             let cell = tableView.cellForRowAtIndexPath(indexPath)
             cell?.accessoryType = .Checkmark
+            self.restaurantIsVisited[indexPath.row]=true
+            
         })
         optionMenu.addAction(isVisitedAction)
         
+        //设定取消选择cell功能的代码。
+        tableView.deselectRowAtIndexPath(indexPath, animated: false)
     }
     
 
